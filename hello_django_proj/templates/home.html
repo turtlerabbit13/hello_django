@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %}Home
+{% endblock %}
+
+{% block content %}
+<style>
+ body{
+	
+	 background-color: RGB(136, 176, 75);
+ }
+
+#im1g{
+	position: absolute;
+	top:150px;
+	left:435px;
+}
+#wc{
+	position: absolute;
+	top:500px;
+	left: 510px;
+	text-align: center;
+	border-style: inherit;
+}
+#wlm{
+	text-align: center;
+	font-size: 30px;
+}
+#btn{
+	position: absolute;
+	top:550px;
+	left: 550px;
+	background-color:RGB(136, 176, 75); 
+
+}
+</style>
+	<div id = "wc">
+			<p id = "wlm"> Welcome to my Website!</p>
+	</div>
+
+	<img src = "https://media.giphy.com/media/3ofSBytgJgon2IWwBq/giphy.gif" id = "im1g" alt="...">
+
+	<a href="{% url 'about_page' %}" class="btn" role="button" aria-pressed="true" id = "btn">Click here to know about me!</a>
+
+	
+
+{% endblock %}
+
